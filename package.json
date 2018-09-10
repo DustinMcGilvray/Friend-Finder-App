@@ -1,0 +1,28 @@
+{
+  "name": "Friend-Finder-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DustinMcGilvray/Friend-Finder-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DustinMcGilvray/Friend-Finder-App/issues"
+  },
+  "homepage": "https://github.com/DustinMcGilvray/Friend-Finder-App#readme"
+}
