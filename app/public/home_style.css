@@ -2,3 +2,16 @@ html {
     background-size: cover;
     background-image: url("./images/goonies_BW.jpg")
 }
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    color: ghostwhite;
+    text-align: center
+}
+
+h3 {
+    
+    font-family: 'Josefin Sans', sans-serif;
+    color: ghostwhite;
+    text-align: center;
+}
