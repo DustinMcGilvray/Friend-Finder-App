@@ -1,6 +1,9 @@
 html {
+    background: url("./images/never_say_die_BW.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-image: url("./images/never_say_die_BW.jpg")
 }
 
 h1 {
