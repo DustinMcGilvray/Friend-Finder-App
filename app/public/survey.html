@@ -20,53 +20,158 @@
 <body>
 
     <div class="container">
-        <div class="twelve columns">
-            <div class="row">
+        <div id = "header" class="row">
+            <div class="twelve columns">
                 <h1>Are you a Goonie?</h1>
             </div>
         </div>
+
+        <form>
+            <div id = "name_link_row" class="row">
+                <div class="twelve columns">
+
+                    <label for="name">What's Your Name?</label>
+                    <input class="u-full-width" type="text" placeholder="Enter Your Name Here" id="name">
+
+                    <label for="image">Please Provide a link to an image of yourself.</label>
+                    <input class="u-full-width" type="url" placeholder="Image Link Here">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div id = "left_column" class="six columns">
+                    <label for="sq1">Survey Question 1 goes here.</label>
+                    <select class="u-half-width" id="sq1">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+
+                    <label for="sq2">Survey Question 2 goes here.</label>
+                    <select class="u-half-width" id="sq2">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+
+                    <label for="sq3">Survey Question 3 goes here.</label>
+                    <select class="u-half-width" id="sq3">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+
+                    <label for="sq4">Survey Question 4 goes here.</label>
+                    <select class="u-half-width" id="sq4">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+
+                    <label for="sq5">Survey Question 5 goes here.</label>
+                    <select class="u-half-width" id="sq5">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+                </div>
+
+                <div id = "right_column" class="six columns">
+                    <label for="sq6">Survey Question 6 goes here.</label>
+                    <select class="u-half-width" id="sq6">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+
+                    <label for="sq7">Survey Question 7 goes here.</label>
+                    <select class="u-half-width" id="sq7">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+
+                    <label for="sq8">Survey Question 8 goes here.</label>
+                    <select class="u-half-width" id="sq8">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+
+                    <label for="sq9">Survey Question 9 goes here.</label>
+                    <select class="u-half-width" id="sq9">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+
+                    <label for="sq10">Survey Question 10 goes here.</label>
+                    <select class="u-half-width" id="sq10">
+                        <option value="1">1 Strongly Disagree</option>
+                        <option value="2">2 Slightly Disagree</option>
+                        <option value="3">3 Neutral</option>
+                        <option value="4">4 Mostly Disagree</option>
+                        <option value="5">5 Strongly Agree</option>
+                    </select>
+                </div>
+            </div>
+            <div id = "submit_button" class="row">
+                <div class="twelve columns">
+                    <input id = "submitButtonColor" class="button" type = "submit" value="">
+                </div>
+            </div>
+        </form>
+
     </div>
 
+</body>
 
+<!--jQuery CDN-->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
 
+<!-- Form Data Sent to Server-->
+<script>
+    $(".submit").on("click", function () {
 
+        var newSurvey = {
+            name: $("survey_name").val().trim(),
+            photo: $("survey_photo").val().trim(),
+            scores: []
+        };
 
+        console.log(newSurvey);
 
+        var currentURL = window.location.origin;
 
+        $.post(currentURL + "/api/friends", newSurvey, function (data) {
 
+            $("#")
 
-
-
-
-
-
-
-    <!--jQuery CDN-->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <!--Local JS-->
-    <script type="text/javascript">
-        $(".submit").on("click", function () {
-
-            var newSurvey = {
-                name: $("survey_name").val().trim(),
-                photo: $("survey_photo").val().trim(),
-                scores: []
-            };
-
-            console.log(newSurvey);
-
-            var currentURL = window.location.origin;
-
-            $.post(currentURL + "/api/friends", newSurvey, function (data) {
-
-                $("#")
-
-
-            });
 
         });
-    </script>
-</body>
+
+    });
+</script>
+
 
 </html>

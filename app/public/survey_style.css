@@ -1,15 +1,57 @@
 html {
-    background: url("./images/astoriajpg_bw.jpg") no-repeat center center fixed;
+    /* background: url("./images/never_say_die.jpg") no-repeat center center fixed; */
+    background: url("./images/the-goonies-4-BW.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
 }
 
 h1 {
     font-family: 'Amatic SC', cursive;
+    color: goldenrod;
 }
 
 h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#header {
+    text-align: center;
+}
+
+#name_link_row {
+    text-align: center;
+}
+
+form {
+    /* background-color: #70421480; */
+    background: url("./images/never_say_die.jpg") no-repeat center center fixed;
+    padding: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+label {
+    color: goldenrod;
+}
+
+input[value] {
+    background: url("./images/treasure-map-x-clipart_640-480.png") no-repeat center center;
+}
+
+#left_column {
+    text-align: center;
+}
+
+#right_column {
+    text-align: center;
+}
+
+#submit_button {
+    text-align: center;
+}
+#submitButtonColor {
+    background-color: goldenrod;
     font-family: 'Josefin Sans', sans-serif;
 }
