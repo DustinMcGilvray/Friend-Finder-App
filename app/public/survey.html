@@ -20,27 +20,27 @@
 <body>
 
     <div class="container">
-        <div id = "header" class="row">
+        <div id="header" class="row">
             <div class="twelve columns">
                 <h1>Are you a Goonie?</h1>
             </div>
         </div>
 
         <form>
-            <div id = "name_link_row" class="row">
+            <div id="name_link_row" class="row">
                 <div class="twelve columns">
 
                     <label for="name">What's Your Name?</label>
-                    <input class="u-full-width" type="text" placeholder="Enter Your Name Here" id="name">
+                    <input class="u-full-width" type="text" placeholder="Enter Your Name Here" id="survey_name">
 
                     <label for="image">Please Provide a link to an image of yourself.</label>
-                    <input class="u-full-width" type="url" placeholder="Image Link Here">
+                    <input class="u-full-width" type="url" placeholder="Image Link Here" id="survey_photo">
 
                 </div>
             </div>
 
             <div class="row">
-                <div id = "left_column" class="six columns">
+                <div id="left_column" class="six columns">
                     <label for="sq1">Survey Question 1 goes here.</label>
                     <select class="u-half-width" id="sq1">
                         <option value="1">1 Strongly Disagree</option>
@@ -87,7 +87,7 @@
                     </select>
                 </div>
 
-                <div id = "right_column" class="six columns">
+                <div id="right_column" class="six columns">
                     <label for="sq6">Survey Question 6 goes here.</label>
                     <select class="u-half-width" id="sq6">
                         <option value="1">1 Strongly Disagree</option>
@@ -134,29 +134,86 @@
                     </select>
                 </div>
             </div>
-            <div id = "submit_button" class="row">
+            <div id="submit_button" class="row">
                 <div class="twelve columns">
-                    <input id = "submitButtonColor" class="button" type = "submit" value="">
+                    <input id="submitButtonColor" class="button" type="submit" value="" title="Submit Survey">
                 </div>
             </div>
         </form>
 
     </div>
 
+    <!-- Modal for Match-->
+
+    <!--Trigger for Modal-->
+    <div class="triggerModal">
+
+        <!--Modal Box-->
+        <div id="matchModal" class="modal">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h3 id="header-title">Best Goonie Match</h3>
+                </div>
+                <div class="modal-body">
+                    <h4 id="match-name"></h4>
+                    <img id="match-img" alt="Match Image">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
 
-<!--jQuery CDN-->
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+<!--JS for the Modal-->
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 <!-- Form Data Sent to Server-->
 <script>
     $(".submit").on("click", function () {
 
         var newSurvey = {
-            name: $("survey_name").val().trim(),
-            photo: $("survey_photo").val().trim(),
-            scores: []
+            name: $("#survey_name").val().trim(),
+            photo: $("#survey_photo").val().trim(),
+            scores: [$("#sq1").val(),
+                $("#sq2").val(),
+                $("#sq3").val(),
+                $("#sq4").val(),
+                $("#sq5").val(),
+                $("#sq6").val(),
+                $("#sq7").val(),
+                $("#sq8").val(),
+                $("#sq9").val(),
+                $("#sq10").val()
+            ]
         };
 
         console.log(newSurvey);
@@ -173,5 +230,8 @@
     });
 </script>
 
+<!--jQuery CDN-->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
 
 </html>
