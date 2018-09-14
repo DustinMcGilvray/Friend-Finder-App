@@ -7,6 +7,10 @@ A Compatibility-Based "Friend Finder" application that takese in results from th
 
 Will you be matched with your favorite Goonie?
 
+<p align="center">
+  <img src = markdown/the-goonies-oath.jpg/>
+</p>
+
 ### Crafted With
 * Node.JS
 * JavaScript
