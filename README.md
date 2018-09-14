@@ -1,3 +1,6 @@
-![alt text](Markdown/Goonies-WS.jpg "goonies")
+<p align="center">
+  <img src = Markdown/Goonies-WS.jpg/>
+</p>
+# FRIEND FINDER
 
 ## Overview
