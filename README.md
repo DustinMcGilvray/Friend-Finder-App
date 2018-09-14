@@ -14,9 +14,9 @@ Will you be matched with your favorite Goonie?
 * GitBash
 
 ### NPM'S
-* [Express] (https://www.npmjs.com/package/express)
-* [Path] (https://www.npmjs.com/package/path)
-* [Body Parser] (https://www.npmjs.com/package/body-parser)
+* [Express](https://www.npmjs.com/package/express)
+* [Path](https://www.npmjs.com/package/path)
+* [Body Parser](https://www.npmjs.com/package/body-parser)
 
 
 ### Authors
