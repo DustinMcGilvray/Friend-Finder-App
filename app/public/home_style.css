@@ -6,6 +6,7 @@ html {
     background-size: cover;
 
 }
+
 section {
     margin-top: 25%;
 }
@@ -38,4 +39,33 @@ h6 {
 
 #row2 {
     text-align: center;
+}
+
+#link {
+    text-align: left;
+}
+
+span-1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: goldenrod;
+}
+
+span-2 {
+    color: goldenrod;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }

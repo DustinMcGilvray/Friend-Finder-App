@@ -2,18 +2,24 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="./images/requests.png">
+    <link rel="icon" type="image/png" href="images/requests.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder</title>
-    <!--Skeleton CSS Framework-->
-    <link rel="stylesheet" type="text/css" href="./skeleton_css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./skeleton_css/skeleton.css">
     <!--Local CSS-->
     <link rel="stylesheet" type="text/css" href="home_style.css">
+    <!--Skeleton CSS Framework-->
+    <link rel="stylesheet" type="text/css" href="skeleton_css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="skeleton_css/normalize.css">
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans" rel="stylesheet">
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -31,21 +37,26 @@
 
         <div id="row1" class="row">
             <div class="twelve columns">
-                    <a href="survey.html" title="Take Survey">
-                        <img src="./images/chapa-the-goonies-button-19.png" onmouseover="this.src='./images/chapa-the-goonies-button-19_hover.png'"
-                            onmouseout="this.src='./images/chapa-the-goonies-button-19.png'" alt="Goonies Button" />
-                    </a>
+                <a href="survey.html" title="Take Survey">
+                    <img src="images/chapa-the-goonies-button-19.png" onmouseover="this.src='images/chapa-the-goonies-button-19_hover.png'"
+                        onmouseout="this.src='images/chapa-the-goonies-button-19.png'" alt="Goonies Button" />
+                </a>
             </div>
         </div>
-
-        <div class="row">
-            
-        </div>
     </div>
-        
+
+    <div class="container">
+    <div id = "links">
+        <p>
+            <a href="../data/friends.js"><span-1>API Friends List</span-1></a>
+            <span-2>|</span-2>
+            <a href="https://github.com/DustinMcGilvray/Friend-Finder-App">
+               <span-3><img src="images/GitHub-Mark-Light-32px.png"></span-3> 
+            </a>
+        </p>
+    </div>
+</div>
 </body>
 
-<!--jQuery CDN-->
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous"></script>
+
 </html>
