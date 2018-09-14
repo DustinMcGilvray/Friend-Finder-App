@@ -7,4 +7,18 @@ A Compatibility-Based "Friend Finder" application that takese in results from th
 
 Will you be matched with your favorite Goonie?
 
-## 
+### Crafted With
+* Node.JS
+* JavaScript
+* Visual Studio
+* GitBash
+
+### NPM'S
+* [Express] (https://www.npmjs.com/package/express)
+* [Path] (https://www.npmjs.com/package/path)
+* [Body Parser] (https://www.npmjs.com/package/body-parser)
+
+
+### Authors
+Dustin McGilvray
+
