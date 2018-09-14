@@ -1,5 +1,5 @@
 <p align="center">
-  <img src = Markdown/Goonies-WS.jpg/>
+  <img src = markdown/goonies_header.jpg/>
 </p>
 
 # FRIEND FINDER
