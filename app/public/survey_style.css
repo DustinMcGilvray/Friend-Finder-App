@@ -13,8 +13,21 @@ h1 {
     color: goldenrod;
 }
 
+#header-title {
+    font-family: 'Amatic SC', cursive;
+    color: goldenrod;
+    text-align: center;
+}
+
 h3 {
     font-family: 'Josefin Sans', sans-serif;
+    color: goldenrod;
+}
+
+h4 {
+    font-family: 'Amatic SC', cursive;
+    color: goldenrod;
+    text-align: center;
 }
 
 #header {
@@ -61,64 +74,29 @@ span {
     border: none;
 }
 
-/* Modal Style */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
+.modal a.close-modal[class*="icon-"] {
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    line-height: 1.25;
+    text-align: center;
     text-decoration: none;
-    cursor: pointer;
-}
-
-#matchModal {
-background: ghostwhite;
-width: 300px;
-height: 250px;
-}
-
-.modal-header {
-    text-align: center;  
-    padding: 25px;
-}
-
-#header-title {
-    font-family: 'Amatic SC', cursive;
-}
+    text-indent: 0;
+    background: #900;
+    border: 2px solid #fff;
+    -webkit-border-radius:  26px;
+    -moz-border-radius:     26px;
+    -o-border-radius:       26px;
+    -ms-border-radius:      26px;
+    -moz-box-shadow:    1px 1px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    box-shadow:         1px 1px 5px rgba(0,0,0,0.5);
+  }
 
 .modal-body {
     text-align: center;
 }
 
-#survey_name {
-    font-family: 'Josefin Sans', sans-serif;
-}
 
