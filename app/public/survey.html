@@ -213,8 +213,11 @@
                     $("#match_name").text(data.name);
                     $("#match_photo").attr("src", data.photo);
                     $("#matchModal").modal("toggle");
-
+                   
                 });
+
+                // Reload Page - Need to find the proper location so page reloads after modal closed
+                // location.reload();
             });
         });
     </script>
