@@ -40,6 +40,9 @@ input[value] {
     background: url("./images/treasure-map-x-clipart_640-480.png") no-repeat center center;
 }
 
+span {
+    padding: 10px;
+}
 
 
 #left_column {
@@ -59,7 +62,6 @@ input[value] {
 }
 
 /* Modal Style */
-/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */

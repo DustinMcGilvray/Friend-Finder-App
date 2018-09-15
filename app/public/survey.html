@@ -17,7 +17,9 @@
     <!--jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
-
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
@@ -29,22 +31,26 @@
             </div>
         </div>
 
+        <!--Survey Form-->
         <form>
             <div id="name_link_row" class="row">
                 <div class="twelve columns">
 
                     <label for="name">What's Your Name?</label>
                     <input class="u-full-width" type="text" placeholder="Enter Your Name Here" id="survey_name">
-
+<span>
                     <label for="image">Please Provide a link to an image, gif, or drawing that represents yourself.</label>
                     <input class="u-full-width" type="url" placeholder="Image Link Here" id="survey_photo">
+                </span>
 
                 </div>
             </div>
 
+            <br>
+
             <div class="row">
                 <div id="left_column" class="six columns">
-                    <label for="sq1">Survey Question 1 goes here.</label>
+                    <label for="sq1">Loyalty is the most important trait for friends.</label>
                     <select class="u-half-width" id="sq1">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -53,7 +59,7 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq2">Survey Question 2 goes here.</label>
+                    <label for="sq2">Spulunking is my favorite past time.</label>
                     <select class="u-half-width" id="sq2">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -62,7 +68,7 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq3">Survey Question 3 goes here.</label>
+                    <label for="sq3">Danger is my middle name!</label>
                     <select class="u-half-width" id="sq3">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -71,7 +77,7 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq4">Survey Question 4 goes here.</label>
+                    <label for="sq4">Buried treasure is worth any risk.</label>
                     <select class="u-half-width" id="sq4">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -80,7 +86,7 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq5">Survey Question 5 goes here.</label>
+                    <label for="sq5">I enjoy "walking the plank."</label>
                     <select class="u-half-width" id="sq5">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -91,7 +97,7 @@
                 </div>
 
                 <div id="right_column" class="six columns">
-                    <label for="sq6">Survey Question 6 goes here.</label>
+                    <label for="sq6">I have momma issues.</label>
                     <select class="u-half-width" id="sq6">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -100,7 +106,7 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq7">Survey Question 7 goes here.</label>
+                    <label for="sq7">My brother is not my best friend.</label>
                     <select class="u-half-width" id="sq7">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -109,7 +115,7 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq8">Survey Question 8 goes here.</label>
+                    <label for="sq8">"Booty Traps" = "Booby Traps"</label>
                     <select class="u-half-width" id="sq8">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -118,7 +124,7 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq9">Survey Question 9 goes here.</label>
+                    <label for="sq9">Protecting my treasure is top priority.</label>
                     <select class="u-half-width" id="sq9">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -127,7 +133,7 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq10">Survey Question 10 goes here.</label>
+                    <label for="sq10">I always have snacks in my hand.</label>
                     <select class="u-half-width" id="sq10">
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
@@ -137,19 +143,16 @@
                     </select>
                 </div>
             </div>
+
             <div id="submit_button" class="row">
                 <div class="twelve columns">
                     <input id="submitButton" class="button" type="submit" value="" title="Submit Survey">
                 </div>
             </div>
         </form>
-
     </div>
 
     <!-- Modal for Match-->
-
-    <!--Trigger for Modal-->
-    <div id ="triggerModal">
 
         <!--Modal Box-->
         <div id="matchModal" class="modal">
@@ -160,50 +163,52 @@
                     <h3 id="header-title">Best Goonie Match</h3>
                 </div>
                 <div class="modal-body">
-                    <h4 id="match-name"></h4>
-                    <img id="match-img" alt="Match Image">
+                    <h4 id="match_name"></h4>
+                    <img id="match_photo" alt="Match Photo">
                 </div>
             </div>
 
         </div>
 
-    </div>
-</body>
+  
 
 
 <!-- Form Data Sent to Server-->
-<script>
-    $("#submitButton").on("click", function () {
-        // console.log("CLICK!");
-        var newSurvey = {
-            name: $("#survey_name").val().trim(),
-            photo: $("#survey_photo").val().trim(),
-            scores: [$("#sq1").val(),
-                $("#sq2").val(),
-                $("#sq3").val(),
-                $("#sq4").val(),
-                $("#sq5").val(),
-                $("#sq6").val(),
-                $("#sq7").val(),
-                $("#sq8").val(),
-                $("#sq9").val(),
-                $("#sq10").val()
-            ]
-        };
+<script type="text/javascript">
+    $(document).ready(function () {
 
-        console.log(newSurvey);
+        $("#submitButton").on("click", function (event) {
+            event.preventDefault();
+            // console.log("CLICK!");
 
-        var currentURL = window.location.origin;
+            //Collect Inputs from Survey
+            var newSurvey = {
+                name: $("#survey_name").val().trim(),
+                photo: $("#survey_photo").val().trim(),
+                scores: [$("#sq1").val(),
+                    $("#sq2").val(),
+                    $("#sq3").val(),
+                    $("#sq4").val(),
+                    $("#sq5").val(),
+                    $("#sq6").val(),
+                    $("#sq7").val(),
+                    $("#sq8").val(),
+                    $("#sq9").val(),
+                    $("#sq10").val()
+                ]
+            };
 
-        $.post(currentURL + "/api/friends", newSurvey, function (data) {
-            $("survey_name").text(data.survey_name);
-            $("survey_image").attr("src", data.survey_photo);
-            $("#matchModal").modal("toggle");
+            // console.log(newSurvey);
 
+            $.post("/api/friends", newSurvey, function (data) {
+                $("#match_name").text(data.survey_name);
+                $("#match_photo").attr("src", data.survey_photo);
+                $("#matchModal").modal();
+
+            });
         });
     });
 </script>
 
-
-
+</body>
 </html>
