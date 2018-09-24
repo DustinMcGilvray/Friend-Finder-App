@@ -62,8 +62,9 @@
 
             <div class="row">
                 <div id="left_column" class="six columns">
-                    <label for="sq1">Loyalty is the most important trait for friends.</label>
+                    <label for="sq1"> 1. Loyalty is the most important trait for friends.</label>
                     <select class="u-half-width" id="sq1">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -71,8 +72,9 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq2">Spulunking is my favorite past time.</label>
+                    <label for="sq2">2. Spulunking is my favorite past time.</label>
                     <select class="u-half-width" id="sq2">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -80,8 +82,9 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq3">Danger is my middle name!</label>
+                    <label for="sq3">3. Danger is my middle name!</label>
                     <select class="u-half-width" id="sq3">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -89,8 +92,9 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq4">Buried treasure is worth any risk.</label>
+                    <label for="sq4">4. Buried treasure is worth any risk.</label>
                     <select class="u-half-width" id="sq4">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -98,8 +102,9 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq5">I enjoy "walking the plank."</label>
+                    <label for="sq5">5. I enjoy "walking the plank."</label>
                     <select class="u-half-width" id="sq5">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -109,8 +114,9 @@
                 </div>
 
                 <div id="right_column" class="six columns">
-                    <label for="sq6">I have momma issues.</label>
+                    <label for="sq6">6. I have momma issues.</label>
                     <select class="u-half-width" id="sq6">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -118,8 +124,9 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq7">My brother is not my best friend.</label>
+                    <label for="sq7">7. My brother is not my best friend.</label>
                     <select class="u-half-width" id="sq7">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -127,8 +134,9 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq8">"Booty Traps" = "Booby Traps"</label>
+                    <label for="sq8">8. "Booty Traps" = "Booby Traps"</label>
                     <select class="u-half-width" id="sq8">
+                        <option class = "option-title" value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -136,8 +144,9 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq9">Protecting my treasure is top priority.</label>
+                    <label for="sq9">9. Protecting my treasure is top priority.</label>
                     <select class="u-half-width" id="sq9">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -145,8 +154,9 @@
                         <option value="5">5 Strongly Agree</option>
                     </select>
 
-                    <label for="sq10">I always have snacks in my hand.</label>
+                    <label for="sq10">10. I always have snacks in my hand.</label>
                     <select class="u-half-width" id="sq10">
+                        <option value="" disabled selected hidden>Play the Bones!</option>
                         <option value="1">1 Strongly Disagree</option>
                         <option value="2">2 Slightly Disagree</option>
                         <option value="3">3 Neutral</option>
@@ -213,7 +223,7 @@
                     $("#match_name").text(data.name);
                     $("#match_photo").attr("src", data.photo);
                     $("#matchModal").modal("toggle");
-                   
+
                 });
 
                 // Reload Page - Need to find the proper location so page reloads after modal closed
