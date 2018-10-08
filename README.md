@@ -3,7 +3,7 @@
 </p>
 
 ## Overview
-A Compatibility-Based "Friend Finder" application that takese in results from the users' survey answers and compares their answers with those from other users. Once the comparison is complete, an image and name will be delivered via Modal with the best match.
+A Compatibility-Based "Friend Finder" application that takes in results from the users' survey answers and compares their answers with those from characters in the 1985 movie, The Gonnie's. Once the comparison is complete, an image/Movie Gif and name will be delivered via Modal with the best match.
 
 <p align="center">
   <img src = markdown/the-goonies-oath.jpg/>
