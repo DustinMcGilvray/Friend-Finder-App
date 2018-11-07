@@ -11,12 +11,17 @@ A Compatibility-Based "Friend Finder" application that takes in results from the
 
 Will you be matched with your favorite Goonie?
 
+[Play the Bones](https://safe-plains-28134.herokuapp.com/survey.html)
+
+### Hosting
+* [Heroku](https://www.heroku.com/)
+
 ### Crafted With
 ---
-* Node.JS
+* [Node.JS](https://nodejs.org/en/)
 * JavaScript
-* Visual Studio
-* GitBash
+* [Visual Studio](https://code.visualstudio.com/)
+* [GitBash](https://git-scm.com/downloads)
 
 ### NPM'S
 ---
